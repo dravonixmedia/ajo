@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: "Ajo Abraham Photography",
     type: "website",
     locale: "en_IN",
-    images: [{ url: "/photos/hero/ajo-abraham-portrait-01.jpg", width: 1440, height: 960 }],
+    images: [{ url: "/photos/hero/hero.jpg", width: 1440, height: 960 }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/photos/hero/ajo-abraham-portrait-01.jpg"],
+    images: ["/photos/hero/hero.jpg"],
   },
 };
 

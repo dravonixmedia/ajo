@@ -5,7 +5,11 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { gsap } from "@/lib/gsap";
 import { useAppStore } from "@/store/useAppStore";
-import { heroSlides } from "@/lib/content/photos";
+
+// The loader is a client-only overlay shown on every page (not just the
+// home hero), so it intentionally uses one fixed background image rather
+// than the dynamic, auto-scanned hero rotation.
+const LOADER_BACKGROUND_SRC = "/photos/hero/hero.jpg";
 
 export default function Loader() {
   const progress = useAppStore((s) => s.progress);
@@ -50,17 +54,14 @@ export default function Loader() {
   return (
     <div className="fixed inset-0 z-[100]">
       <div className="absolute inset-0 overflow-hidden bg-charcoal">
-        {heroSlides.slice(0, 1).map((slide) => (
-          <Image
-            key={slide.src}
-            src={slide.src}
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover opacity-30"
-          />
-        ))}
+        <Image
+          src={LOADER_BACKGROUND_SRC}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
+        />
         <div className="absolute inset-0 bg-charcoal/60" />
       </div>
 

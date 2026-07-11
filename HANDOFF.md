@@ -74,9 +74,35 @@ record.
 
 ## 7. Ongoing content updates
 
-Photos are currently a manually-maintained content manifest at
-`lib/content/photos.ts`, with files under `public/photos/**`. Adding a
-photo today means editing that file and pushing to Git — there's no
-upload UI for Ajo yet. If/when that's built (a Git-based CMS like Decap/
-Tina, or a headless CMS like Sanity), this section should be updated with
-the new workflow.
+Photos are auto-scanned from `public/photos/**` at build time (see
+`lib/content/photoScanner.ts`) — no code change needed to add, remove, or
+reorder photographs. To publish new photos:
+
+1. Drop image files (`.jpg`, `.jpeg`, `.png`, `.webp`, or `.avif`) into the
+   right folder:
+   - `public/photos/weddings/`, `fashion/`, `portraits/`, `baby-family/` —
+     the four portfolio galleries
+   - `public/photos/hero/` — home hero (cycles through everything there)
+   - `public/photos/story/` — Signature Story sequence
+   - `public/photos/about/` — About section portrait (first file wins)
+   - `public/photos/testimonials/` — Testimonials background photos
+   - `public/photos/recent/` — Journal/Recent Stories grid (shows up to 9)
+2. Commit and push (or upload directly via GitHub's web UI, same way
+   `hero.jpg` was added) — the next deploy picks the new files up
+   automatically.
+
+Ordering follows natural filename sort (`wedding-2.jpg` before
+`wedding-10.jpg`, regardless of zero-padding). A file named `cover.*` in a
+folder is always moved to the front, so Ajo can choose a category's/hero's
+lead photo without renaming anything else.
+
+Alt text is generated from the filename — `bride-getting-ready.jpg` becomes
+"Bride getting ready — Weddings photography by Ajo Abraham, Kerala". Purely
+numeric or generic filenames fall back to a generic category description.
+For meaningful SEO alt text, name files descriptively.
+
+This covers "upload and it appears" without any CMS. It does **not** give
+Ajo control over alt text wording, category descriptions, or curation
+beyond file naming/the cover convention — if that level of control matters,
+the CMS options (Decap/Tina or Sanity) discussed earlier are still the
+next step up.

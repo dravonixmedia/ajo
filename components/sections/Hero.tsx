@@ -5,11 +5,11 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import TextReveal from "@/components/ui/TextReveal";
 import MagneticButton from "@/components/ui/MagneticButton";
-import { heroSlides } from "@/lib/content/photos";
+import type { Photo } from "@/lib/content/photos";
 import { useLenis } from "@/components/providers/SmoothScrollProvider";
 import { whatsappLink } from "@/lib/siteConfig";
 
-export default function Hero() {
+export default function Hero({ slides }: { slides: Photo[] }) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [slide, setSlide] = useState(0);
   const lenis = useLenis();
@@ -19,10 +19,11 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   useEffect(() => {
+    if (slides.length < 2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const interval = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 6000);
+    const interval = setInterval(() => setSlide((s) => (s + 1) % slides.length), 6000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   function scrollToWorks(e: React.MouseEvent) {
     e.preventDefault();
@@ -34,7 +35,7 @@ export default function Hero() {
   return (
     <section id="hero" ref={sectionRef} className="relative h-[100svh] w-full overflow-hidden bg-charcoal">
       <motion.div className="absolute inset-0" style={{ y }}>
-        {heroSlides.map((photo, i) => (
+        {slides.map((photo, i) => (
           <motion.div
             key={photo.src}
             className="absolute inset-0"

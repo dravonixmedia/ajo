@@ -5,9 +5,9 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { testimonials } from "@/lib/content/testimonials";
-import { testimonialBackgrounds } from "@/lib/content/photos";
+import type { Photo } from "@/lib/content/photos";
 
-export default function Testimonials() {
+export default function Testimonials({ backgrounds }: { backgrounds: Photo[] }) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -16,21 +16,23 @@ export default function Testimonials() {
     return () => clearInterval(interval);
   }, []);
 
-  const bg = testimonialBackgrounds[index % testimonialBackgrounds.length];
+  const bg = backgrounds.length > 0 ? backgrounds[index % backgrounds.length] : null;
   const testimonial = testimonials[index];
 
   return (
     <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-charcoal py-28">
-      <motion.div
-        key={bg.src}
-        className="absolute inset-0"
-        initial={{ opacity: 0, scale: 1.08 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
-      >
-        <Image src={bg.src} alt={bg.alt} fill sizes="100vw" className="object-cover" />
-        <div className="absolute inset-0 bg-charcoal/70" />
-      </motion.div>
+      {bg && (
+        <motion.div
+          key={bg.src}
+          className="absolute inset-0"
+          initial={{ opacity: 0, scale: 1.08 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Image src={bg.src} alt={bg.alt} fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-charcoal/70" />
+        </motion.div>
+      )}
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center text-ivory">
         <SectionLabel index="10" title="Testimonials" tone="light" />

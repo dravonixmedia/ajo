@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CategoryGallery from "@/components/CategoryGallery";
-import { getCategory, portfolioCategories } from "@/lib/content/photos";
+import { ALL_CATEGORY_SLUGS } from "@/lib/content/photos";
+import { getCategory } from "@/lib/content/photoScanner";
 
 export function generateStaticParams() {
-  return portfolioCategories.map((c) => ({ category: c.slug }));
+  return ALL_CATEGORY_SLUGS.map((slug) => ({ category: slug }));
 }
 
 export async function generateMetadata({
@@ -18,6 +19,7 @@ export async function generateMetadata({
 
   const title = `${category.title} Photography | Ajo Abraham — Kerala Photographer`;
   const description = `${category.description} View the full ${category.title.toLowerCase()} portfolio by Kerala photographer Ajo Abraham.`;
+  const cover = category.photos[0];
 
   return {
     title,
@@ -25,7 +27,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: category.photos[category.coverIndex].src }],
+      images: cover ? [{ url: cover.src }] : undefined,
     },
   };
 }

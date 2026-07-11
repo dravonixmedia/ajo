@@ -3,9 +3,11 @@ import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
 import HorizontalGallery from "@/components/ui/HorizontalGallery";
-import { portfolioCategories } from "@/lib/content/photos";
+import { getPortfolioCategories } from "@/lib/content/photoScanner";
+import type { PortfolioCategory } from "@/lib/content/photos";
 
 export default function SelectedWorks() {
+  const portfolioCategories = getPortfolioCategories();
   const filmstrip = portfolioCategories.flatMap((c) => c.photos.slice(0, 3));
 
   return (
@@ -27,24 +29,20 @@ export default function SelectedWorks() {
         ))}
       </div>
 
-      <div className="mt-24">
-        <div className="mx-auto mb-8 max-w-6xl px-6">
-          <p className="section-label">Scroll to explore</p>
+      {filmstrip.length > 0 && (
+        <div className="mt-24">
+          <div className="mx-auto mb-8 max-w-6xl px-6">
+            <p className="section-label">Scroll to explore</p>
+          </div>
+          <HorizontalGallery photos={filmstrip} />
         </div>
-        <HorizontalGallery photos={filmstrip} />
-      </div>
+      )}
     </section>
   );
 }
 
-function CategoryTile({
-  category,
-  reverse,
-}: {
-  category: (typeof portfolioCategories)[number];
-  reverse: boolean;
-}) {
-  const cover = category.photos[category.coverIndex];
+function CategoryTile({ category, reverse }: { category: PortfolioCategory; reverse: boolean }) {
+  const cover = category.photos[0];
   return (
     <Reveal className="border-t border-ink/10">
       <Link
@@ -52,14 +50,16 @@ function CategoryTile({
         data-cursor="link"
         className={`group flex flex-col gap-0 md:flex-row md:items-center ${reverse ? "md:flex-row-reverse" : ""}`}
       >
-        <div className="relative aspect-[4/3] w-full overflow-hidden md:w-3/5">
-          <Image
-            src={cover.src}
-            alt={cover.alt}
-            fill
-            sizes="(min-width: 768px) 60vw, 100vw"
-            className="scale-[1.08] object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-100"
-          />
+        <div className="relative aspect-[4/3] w-full overflow-hidden bg-paper md:w-3/5">
+          {cover && (
+            <Image
+              src={cover.src}
+              alt={cover.alt}
+              fill
+              sizes="(min-width: 768px) 60vw, 100vw"
+              className="scale-[1.08] object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-100"
+            />
+          )}
         </div>
         <div className="flex w-full flex-col justify-center px-6 py-10 md:w-2/5 md:px-12">
           <span className="section-label mb-4">{category.title}</span>

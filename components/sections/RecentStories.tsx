@@ -2,10 +2,12 @@ import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
 import MagneticButton from "@/components/ui/MagneticButton";
-import { recentStories } from "@/lib/content/photos";
+import { getRecentStories } from "@/lib/content/photoScanner";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/lib/siteConfig";
 
 export default function RecentStories() {
+  const recentStories = getRecentStories();
+
   return (
     <section id="recent-stories" className="relative bg-bg py-28 md:py-36">
       <div className="mx-auto max-w-6xl px-6">
@@ -26,6 +28,10 @@ export default function RecentStories() {
             </a>
           </Reveal>
         </div>
+
+        {recentStories.length === 0 && (
+          <p className="mt-14 text-sm text-ink-faint">New stories coming soon.</p>
+        )}
 
         <div className="mt-14 grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3">
           {recentStories.map((photo, i) => (

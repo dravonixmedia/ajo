@@ -27,22 +27,10 @@ export interface PortfolioCategory {
 
 export const heroSlides: Photo[] = [
   {
-    src: "/photos/hero/hero-01.png",
-    alt: "Bride and groom sharing a quiet moment at golden hour, Kerala wedding photography by Ajo Abraham",
-    width: 1920,
-    height: 1080,
-  },
-  {
-    src: "/photos/hero/hero-02.png",
-    alt: "Candid portrait session with soft natural light, photographed by Ajo Abraham",
-    width: 1920,
-    height: 1080,
-  },
-  {
-    src: "/photos/hero/hero-03.png",
-    alt: "Editorial fashion photograph with dramatic warm lighting, Ajo Abraham photography",
-    width: 1920,
-    height: 1080,
+    src: "/photos/hero/hero.jpg",
+    alt: "Black and white portrait of Kerala photographer Ajo Abraham",
+    width: 1440,
+    height: 960,
   },
 ];
 

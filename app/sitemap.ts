@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { portfolioCategories } from "@/lib/content/photos";
 
-const siteUrl = "https://ajoabraham.com";
+const siteUrl = "https://ajo.dravonix.dev";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

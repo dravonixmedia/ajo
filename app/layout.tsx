@@ -6,7 +6,7 @@ import { CONTACT_EMAIL, INSTAGRAM_URL, WHATSAPP_NUMBER } from "@/lib/siteConfig"
 const title = "Ajo Abraham | Wedding, Fashion & Portrait Photographer in Kerala";
 const description =
   "Ajo Abraham is a Kerala-based professional photographer specialising in wedding, engagement, fashion, portrait and baby & family photography — honest, cinematic storytelling for life's most meaningful moments.";
-const siteUrl = "https://ajoabraham.com";
+const siteUrl = "https://ajo.dravonix.dev";
 
 export const metadata: Metadata = {
   title: {

@@ -24,8 +24,10 @@
 		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
 	},
-	// TODO: set the real custom domain for Ajo Abraham's site once decided
-	// (e.g. "photography.ajoabraham.com" or similar), then re-add a routes
-	// block: [{ "pattern": "<domain>", "custom_domain": true }]
-	"routes": []
+	"routes": [
+		{
+			"pattern": "ajo.dravonix.dev",
+			"custom_domain": true
+		}
+	]
 }

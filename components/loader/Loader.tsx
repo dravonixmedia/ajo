@@ -9,7 +9,7 @@ import { useAppStore } from "@/store/useAppStore";
 // The loader is a client-only overlay shown on every page (not just the
 // home hero), so it intentionally uses one fixed background image rather
 // than the dynamic, auto-scanned hero rotation.
-const LOADER_BACKGROUND_SRC = "/photos/hero/hero.jpg";
+const LOADER_BACKGROUND_SRC = "/photos/hero/ajo-abraham-portrait-01.jpg";
 
 export default function Loader() {
   const progress = useAppStore((s) => s.progress);

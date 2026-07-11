@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: "Ajo Abraham Photography",
     type: "website",
     locale: "en_IN",
-    images: [{ url: "/photos/hero/hero.jpg", width: 1440, height: 960 }],
+    images: [{ url: "/photos/hero/ajo-abraham-portrait-01.jpg", width: 1440, height: 960 }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/photos/hero/hero.jpg"],
+    images: ["/photos/hero/ajo-abraham-portrait-01.jpg"],
   },
 };
 
@@ -57,7 +57,7 @@ const professionalServiceJsonLd = {
   url: siteUrl,
   email: CONTACT_EMAIL,
   telephone: `+${WHATSAPP_NUMBER}`,
-  image: `${siteUrl}/photos/about/ajo-portrait.png`,
+  image: `${siteUrl}/photos/about/ajo-abraham-portrait-02.png`,
   sameAs: [INSTAGRAM_URL],
   areaServed: "Kerala, India",
   address: {

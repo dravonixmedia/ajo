@@ -1,0 +1,344 @@
+{
+  "hero": [
+    {
+      "src": "/photos/hero/hero.jpg",
+      "alt": "Hero — Photography by Ajo Abraham, Kerala",
+      "width": 1440,
+      "height": 960
+    }
+  ],
+  "categories": {
+    "weddings": [
+      {
+        "src": "/photos/weddings/wedding-01.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/weddings/wedding-02.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/weddings/wedding-03.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/weddings/wedding-04.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/weddings/wedding-05.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/weddings/wedding-06.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/weddings/wedding-07.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/weddings/wedding-08.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/weddings/wedding-09.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/weddings/wedding-10.png",
+        "alt": "Weddings photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "fashion": [
+      {
+        "src": "/photos/fashion/fashion-01.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1000,
+        "height": 1414
+      },
+      {
+        "src": "/photos/fashion/fashion-02.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1000,
+        "height": 1414
+      },
+      {
+        "src": "/photos/fashion/fashion-03.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1000,
+        "height": 1414
+      },
+      {
+        "src": "/photos/fashion/fashion-04.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/fashion/fashion-05.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1000,
+        "height": 1414
+      },
+      {
+        "src": "/photos/fashion/fashion-06.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1000,
+        "height": 1414
+      },
+      {
+        "src": "/photos/fashion/fashion-07.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1000,
+        "height": 1414
+      },
+      {
+        "src": "/photos/fashion/fashion-08.png",
+        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "portraits": [
+      {
+        "src": "/photos/portraits/portrait-01.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/portraits/portrait-02.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/portraits/portrait-03.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/portraits/portrait-04.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/portraits/portrait-05.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/portraits/portrait-06.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/portraits/portrait-07.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/portraits/portrait-08.png",
+        "alt": "Portraits photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      }
+    ],
+    "baby-family": [
+      {
+        "src": "/photos/baby-family/baby-family-01.png",
+        "alt": "Baby family 01 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/baby-family/baby-family-02.png",
+        "alt": "Baby family 02 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/baby-family/baby-family-03.png",
+        "alt": "Baby family 03 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/baby-family/baby-family-04.png",
+        "alt": "Baby family 04 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/baby-family/baby-family-05.png",
+        "alt": "Baby family 05 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/baby-family/baby-family-06.png",
+        "alt": "Baby family 06 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/photos/baby-family/baby-family-07.png",
+        "alt": "Baby family 07 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      },
+      {
+        "src": "/photos/baby-family/baby-family-08.png",
+        "alt": "Baby family 08 — Baby & Family photography by Ajo Abraham, Kerala",
+        "width": 1100,
+        "height": 1467
+      }
+    ]
+  },
+  "story": [
+    {
+      "src": "/photos/story/story-01.png",
+      "alt": "Wedding story photography by Ajo Abraham",
+      "width": 1100,
+      "height": 1467
+    },
+    {
+      "src": "/photos/story/story-02.png",
+      "alt": "Wedding story photography by Ajo Abraham",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/photos/story/story-03.png",
+      "alt": "Wedding story photography by Ajo Abraham",
+      "width": 1100,
+      "height": 1467
+    },
+    {
+      "src": "/photos/story/story-04.png",
+      "alt": "Wedding story photography by Ajo Abraham",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/photos/story/story-05.png",
+      "alt": "Wedding story photography by Ajo Abraham",
+      "width": 1100,
+      "height": 1467
+    },
+    {
+      "src": "/photos/story/story-06.png",
+      "alt": "Wedding story photography by Ajo Abraham",
+      "width": 1600,
+      "height": 1067
+    }
+  ],
+  "about": {
+    "src": "/photos/about/ajo-abraham-portrait-02.png",
+    "alt": "Ajo abraham portrait 02 — Portrait of Kerala photographer Ajo Abraham",
+    "width": 1000,
+    "height": 1414
+  },
+  "testimonials": [
+    {
+      "src": "/photos/testimonials/testimonial-bg-01.png",
+      "alt": "Testimonial bg 01 — Photography by Ajo Abraham, Kerala",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/photos/testimonials/testimonial-bg-02.png",
+      "alt": "Testimonial bg 02 — Photography by Ajo Abraham, Kerala",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/photos/testimonials/testimonial-bg-03.png",
+      "alt": "Testimonial bg 03 — Photography by Ajo Abraham, Kerala",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "recent": [
+    {
+      "src": "/photos/recent/recent-01.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-02.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-03.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-04.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-05.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-06.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-07.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-08.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "src": "/photos/recent/recent-09.png",
+      "alt": "Recent photography story by Ajo Abraham",
+      "width": 1200,
+      "height": 1200
+    }
+  ]
+}

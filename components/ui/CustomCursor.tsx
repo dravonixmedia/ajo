@@ -80,13 +80,18 @@ export default function CustomCursor() {
     >
       <div
         ref={ringRef}
-        className="absolute left-0 top-0 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rounded-full border border-ivory"
-        style={{ mixBlendMode: "difference" }}
+        className="absolute left-0 top-0 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rounded-full"
+        style={{
+          background: "conic-gradient(from 180deg, #a855f7, #ec4899, #a855f7)",
+          WebkitMask: "radial-gradient(circle, transparent 62%, black 63%)",
+          mask: "radial-gradient(circle, transparent 62%, black 63%)",
+          filter: "drop-shadow(0 0 6px rgba(236, 72, 153, 0.45))",
+        }}
       />
       <div
         ref={dotRef}
-        className="absolute left-0 top-0 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ivory"
-        style={{ mixBlendMode: "difference" }}
+        className="absolute left-0 top-0 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full"
+        style={{ background: "linear-gradient(135deg, #a855f7, #ec4899)" }}
       />
     </div>
   );

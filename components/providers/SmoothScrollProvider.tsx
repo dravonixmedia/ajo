@@ -69,8 +69,26 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
   // navigation" doesn't reach it — without this, clicking a link to another
   // page (e.g. a portfolio category) lands wherever Lenis happened to be
   // scrolled to on the previous page instead of at the top of the new one.
+  //
+  // If the new URL carries a hash (e.g. "/#selected-works", used by the
+  // category pages' "Back to Home" link), land on that section instead of
+  // the very top.
   useEffect(() => {
-    lenis?.scrollTo(0, { immediate: true });
+    if (!lenis) return;
+    // Wait a frame so the new page's layout (and ScrollTrigger's own
+    // recalculation of pinned/animated sections) has settled before
+    // measuring where the hash target actually is.
+    const raf = requestAnimationFrame(() => {
+      ScrollTrigger.refresh();
+      const hash = window.location.hash;
+      const target = hash ? document.querySelector(hash) : null;
+      if (target) {
+        lenis.scrollTo(target as HTMLElement, { immediate: true, offset: -40 });
+      } else {
+        lenis.scrollTo(0, { immediate: true });
+      }
+    });
+    return () => cancelAnimationFrame(raf);
   }, [pathname, lenis]);
 
   return <LenisContext.Provider value={lenis}>{children}</LenisContext.Provider>;

@@ -44,7 +44,8 @@ export default function CategoryGallery({ category }: { category: PortfolioCateg
           </Reveal>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/"
+              href="/#selected-works"
+              scroll={false}
               data-cursor="link"
               className="bg-charcoal px-6 py-3 text-xs uppercase tracking-[0.2em] text-ivory transition-colors hover:bg-brown"
             >

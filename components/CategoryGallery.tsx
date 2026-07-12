@@ -22,13 +22,6 @@ export default function CategoryGallery({ category }: { category: PortfolioCateg
       <section className="relative h-[70vh] w-full overflow-hidden bg-charcoal">
         {cover && <Image src={cover.src} alt={cover.alt} fill priority sizes="100vw" className="object-cover" />}
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-charcoal/40" />
-        <Link
-          href="/"
-          data-cursor="link"
-          className="absolute left-6 top-24 z-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ivory/70 transition-colors hover:text-ivory md:left-10 md:top-28"
-        >
-          <span aria-hidden>←</span> Back to Home
-        </Link>
         <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-16 text-center text-ivory">
           <p className="mb-4 text-[11px] uppercase tracking-[0.5em] text-gold">Portfolio</p>
           <h1 className="font-serif text-5xl md:text-7xl">{category.title}</h1>

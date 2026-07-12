@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { useAppStore } from "@/store/useAppStore";
@@ -12,6 +13,7 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
   const [lenis, setLenis] = useState<Lenis | null>(null);
   const rafId = useRef<number | null>(null);
   const setScrollProgress = useAppStore((s) => s.setScrollProgress);
+  const pathname = usePathname();
 
   useEffect(() => {
     const instance = new Lenis({
@@ -61,6 +63,15 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
   useEffect(() => {
     gsap.ticker.lagSmoothing(0);
   }, []);
+
+  // Lenis keeps its own virtual scroll offset independent of the browser's
+  // native scroll position, so Next.js's default "scroll to top on
+  // navigation" doesn't reach it — without this, clicking a link to another
+  // page (e.g. a portfolio category) lands wherever Lenis happened to be
+  // scrolled to on the previous page instead of at the top of the new one.
+  useEffect(() => {
+    lenis?.scrollTo(0, { immediate: true });
+  }, [pathname, lenis]);
 
   return <LenisContext.Provider value={lenis}>{children}</LenisContext.Provider>;
 }

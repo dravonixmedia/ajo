@@ -47,7 +47,7 @@ function CategoryTile({ category, reverse }: { category: PortfolioCategory; reve
     <Reveal className="border-t border-ink/10">
       <Link
         href={`/portfolio/${category.slug}`}
-        data-cursor="link"
+        data-cursor="image"
         className={`group flex flex-col gap-0 md:flex-row md:items-center ${reverse ? "md:flex-row-reverse" : ""}`}
       >
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-paper md:w-3/5">

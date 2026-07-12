@@ -41,7 +41,7 @@ function Frame({
   return (
     <button
       type="button"
-      data-cursor="link"
+      data-cursor="image"
       aria-label={`Open photograph: ${photo.alt}`}
       onClick={() => onOpen(index)}
       className="group relative block w-full overflow-hidden bg-paper"

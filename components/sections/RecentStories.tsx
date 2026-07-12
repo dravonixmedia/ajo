@@ -40,7 +40,7 @@ export default function RecentStories() {
                 href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                data-cursor="link"
+                data-cursor="image"
                 className="group relative block aspect-square overflow-hidden bg-paper"
               >
                 <Image

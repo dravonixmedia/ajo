@@ -10,64 +10,22 @@
   "categories": {
     "weddings": [
       {
-        "src": "/photos/weddings/wedding-01.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1600,
-        "height": 1067
+        "src": "/photos/weddings/WEDDING 01.jpg",
+        "alt": "Wedding 01 — Weddings photography by Ajo Abraham, Kerala",
+        "width": 3277,
+        "height": 4096
       },
       {
-        "src": "/photos/weddings/wedding-02.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1100,
-        "height": 1467
+        "src": "/photos/weddings/WEDDING 02.jpg",
+        "alt": "Wedding 02 — Weddings photography by Ajo Abraham, Kerala",
+        "width": 1440,
+        "height": 1800
       },
       {
-        "src": "/photos/weddings/wedding-03.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1100,
-        "height": 1467
-      },
-      {
-        "src": "/photos/weddings/wedding-04.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1600,
-        "height": 1067
-      },
-      {
-        "src": "/photos/weddings/wedding-05.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1100,
-        "height": 1467
-      },
-      {
-        "src": "/photos/weddings/wedding-06.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1100,
-        "height": 1467
-      },
-      {
-        "src": "/photos/weddings/wedding-07.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1600,
-        "height": 1067
-      },
-      {
-        "src": "/photos/weddings/wedding-08.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1100,
-        "height": 1467
-      },
-      {
-        "src": "/photos/weddings/wedding-09.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1100,
-        "height": 1467
-      },
-      {
-        "src": "/photos/weddings/wedding-10.png",
-        "alt": "Weddings photography by Ajo Abraham, Kerala",
-        "width": 1600,
-        "height": 1067
+        "src": "/photos/weddings/WEDDING 03.jpg",
+        "alt": "Wedding 03 — Weddings photography by Ajo Abraham, Kerala",
+        "width": 1440,
+        "height": 1920
       }
     ],
     "fashion": [
@@ -223,47 +181,71 @@
   },
   "story": [
     {
-      "src": "/photos/story/story-01.png",
-      "alt": "Wedding story photography by Ajo Abraham",
-      "width": 1100,
-      "height": 1467
+      "src": "/photos/story/SIG 01.jpg",
+      "alt": "Sig 01 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1920
     },
     {
-      "src": "/photos/story/story-02.png",
-      "alt": "Wedding story photography by Ajo Abraham",
-      "width": 1600,
-      "height": 1067
+      "src": "/photos/story/SIG 02.jpg",
+      "alt": "Sig 02 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1920
     },
     {
-      "src": "/photos/story/story-03.png",
-      "alt": "Wedding story photography by Ajo Abraham",
-      "width": 1100,
-      "height": 1467
+      "src": "/photos/story/SIG 03.jpg",
+      "alt": "Sig 03 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1920
     },
     {
-      "src": "/photos/story/story-04.png",
-      "alt": "Wedding story photography by Ajo Abraham",
-      "width": 1600,
-      "height": 1067
+      "src": "/photos/story/SIG 04.jpg",
+      "alt": "Sig 04 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 961
     },
     {
-      "src": "/photos/story/story-05.png",
-      "alt": "Wedding story photography by Ajo Abraham",
-      "width": 1100,
-      "height": 1467
+      "src": "/photos/story/SIG 05.jpg",
+      "alt": "Sig 05 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1799
     },
     {
-      "src": "/photos/story/story-06.png",
-      "alt": "Wedding story photography by Ajo Abraham",
-      "width": 1600,
-      "height": 1067
+      "src": "/photos/story/SIG 06.jpg",
+      "alt": "Sig 06 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/photos/story/SIG 07.jpg",
+      "alt": "Sig 07 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/photos/story/SIG 08.jpg",
+      "alt": "Sig 08 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/photos/story/SIG 09.jpg",
+      "alt": "Sig 09 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/photos/story/SIG 10.jpg",
+      "alt": "Sig 10 — Wedding story photography by Ajo Abraham",
+      "width": 1440,
+      "height": 1920
     }
   ],
   "about": {
-    "src": "/photos/about/ajo-abraham-portrait-02.png",
-    "alt": "Ajo abraham portrait 02 — Portrait of Kerala photographer Ajo Abraham",
-    "width": 1000,
-    "height": 1414
+    "src": "/photos/about/about.jpg",
+    "alt": "About — Portrait of Kerala photographer Ajo Abraham",
+    "width": 1536,
+    "height": 1537
   },
   "testimonials": [
     {

@@ -94,13 +94,22 @@ export default function Header() {
         </a>
 
         <button
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
           data-cursor="link"
           onClick={() => setMenuOpen((v) => !v)}
-          className="flex flex-col gap-1.5 md:hidden"
+          className="relative z-[60] flex h-6 w-6 flex-col items-center justify-center md:hidden"
         >
-          <span className={clsx("h-px w-6 transition-colors", dark ? "bg-ivory" : "bg-ink")} />
-          <span className={clsx("h-px w-6 transition-colors", dark ? "bg-ivory" : "bg-ink")} />
+          <motion.span
+            className={clsx("absolute h-px w-6 transition-colors", dark || menuOpen ? "bg-ivory" : "bg-ink")}
+            animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 0 : -3 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+          />
+          <motion.span
+            className={clsx("absolute h-px w-6 transition-colors", dark || menuOpen ? "bg-ivory" : "bg-ink")}
+            animate={{ rotate: menuOpen ? -45 : 0, y: menuOpen ? 0 : 3 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+          />
         </button>
       </div>
 

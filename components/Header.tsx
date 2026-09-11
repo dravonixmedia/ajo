@@ -50,6 +50,7 @@ export default function Header() {
 
   return (
     <motion.header
+      data-site-header
       initial={{ opacity: 0, y: -16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1, duration: 0.8 }}

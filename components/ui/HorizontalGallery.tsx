@@ -2,17 +2,29 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { gsap } from "@/lib/gsap";
+import { gsap, ScrollTrigger } from "@/lib/gsap";
+import { useAppStore } from "@/store/useAppStore";
 import type { Photo } from "@/lib/content/photos";
 
 interface HorizontalGalleryProps {
   photos: Photo[];
 }
 
+/**
+ * Height of the fixed site header, read live from the DOM. The header's
+ * height isn't a fixed design token (it's padding + content, see
+ * Header.tsx), so it's measured rather than hardcoded.
+ */
+function getHeaderOffset() {
+  const header = document.querySelector<HTMLElement>("[data-site-header]");
+  return header?.offsetHeight ?? 0;
+}
+
 /** A horizontal filmstrip that tracks vertical scroll while pinned in view. */
 export default function HorizontalGallery({ photos }: HorizontalGalleryProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const hasEnteredHero = useAppStore((s) => s.hasEnteredHero);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -31,10 +43,17 @@ export default function HorizontalGallery({ photos }: HorizontalGalleryProps) {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top top",
+          // Pin where the gallery naturally rests below the fixed header,
+          // not at the literal viewport top. "top top" pinned the frame
+          // flush against y=0 — underneath the header — which is what
+          // caused the upward jump and the cropped top edge.
+          start: () => `top top+=${getHeaderOffset()}`,
           end: () => `+=${distance}`,
           scrub: 0.6,
           pin: true,
+          // Removes the one-frame jump GSAP can introduce when a scrubbed
+          // pin engages.
+          anticipatePin: 1,
           invalidateOnRefresh: true,
         },
       });
@@ -42,6 +61,15 @@ export default function HorizontalGallery({ photos }: HorizontalGalleryProps) {
 
     return () => ctx.revert();
   }, []);
+
+  // The header only mounts once the loader finishes (Header.tsx returns
+  // null until then), so the very first ScrollTrigger calculation can read
+  // a header height of 0. Re-measure as soon as it's actually on screen.
+  useEffect(() => {
+    if (!hasEnteredHero) return;
+    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    return () => cancelAnimationFrame(id);
+  }, [hasEnteredHero]);
 
   return (
     <div ref={sectionRef} className="relative overflow-hidden">

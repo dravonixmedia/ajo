@@ -80,7 +80,7 @@ reorder photographs. To publish new photos:
 
 1. Drop image files (`.jpg`, `.jpeg`, `.png`, `.webp`, or `.avif`) into the
    right folder:
-   - `public/photos/weddings/`, `fashion/`, `portraits/`, `baby-family/` —
+   - `public/photos/weddings/`, `couple/`, `portraits/`, `intimate/` —
      the four portfolio galleries
    - `public/photos/hero/` — home hero (cycles through everything there)
    - `public/photos/story/` — Signature Story sequence

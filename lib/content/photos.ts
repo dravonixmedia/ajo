@@ -16,7 +16,7 @@ export interface Photo {
   height: number;
 }
 
-export type PortfolioCategorySlug = "weddings" | "fashion" | "portraits" | "baby-family";
+export type PortfolioCategorySlug = "weddings" | "couple" | "portraits" | "intimate";
 
 export interface PortfolioCategory {
   slug: PortfolioCategorySlug;
@@ -37,11 +37,10 @@ export const CATEGORY_META: Record<
     description:
       "Full wedding stories from Kerala and beyond — the quiet preparations, the ceremony, and the celebrations that follow, documented as they naturally unfold.",
   },
-  fashion: {
-    title: "Fashion",
-    shortLabel: "Fashion",
-    description:
-      "Editorial and fashion collaborations built around mood, light and character — created with stylists, designers and models across Kerala.",
+  couple: {
+    title: "Couple",
+    shortLabel: "Couple",
+    description: "Honest connection, quiet chemistry, and portraits that feel naturally yours.",
   },
   portraits: {
     title: "Portraits",
@@ -49,11 +48,10 @@ export const CATEGORY_META: Record<
     description:
       "Personal and model portfolios shaped around real personality — honest expressions, natural light and a calm, observational approach.",
   },
-  "baby-family": {
-    title: "Baby & Family",
-    shortLabel: "Baby & Family",
-    description:
-      "Gentle, unposed family and baby photography that captures real warmth — the small everyday moments that families return to for years.",
+  intimate: {
+    title: "Intimate",
+    shortLabel: "Intimate",
+    description: "Close, personal stories shaped by emotion, stillness, and genuine connection.",
   },
 };
 

@@ -33,9 +33,9 @@ const SUPPORTED_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]
 // title matters here, for the alt-text fallback).
 const CATEGORY_TITLES = {
   weddings: "Weddings",
-  fashion: "Fashion",
+  couple: "Couple",
   portraits: "Portraits",
-  "baby-family": "Baby & Family",
+  intimate: "Intimate",
 };
 const CATEGORY_SLUGS = Object.keys(CATEGORY_TITLES);
 

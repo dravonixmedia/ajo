@@ -32,23 +32,34 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="font-serif text-4xl leading-[1.1] text-ink md:text-6xl">
-              The Person Behind the Camera
+              My Story Behind the Lens
             </h2>
           </Reveal>
           <Reveal delay={0.18}>
             <div className="mt-8 flex flex-col gap-5 text-sm leading-relaxed text-ink-soft md:text-base">
               <p>
-                Ajo Abraham is a professional photographer from Kerala with a passion for
-                capturing real emotions, distinctive personalities and meaningful celebrations.
+                I&rsquo;m Ajo Abraham, a photographer from Kerala with over 7 years of experience
+                capturing stories, emotions and moments that deserve to be remembered.
               </p>
               <p>
-                His work moves between wedding storytelling, couples, portraits, intimate stories
-                and creative collaborations. Rather than forcing moments, his approach is built
-                around observation—allowing people, emotions and light to come together naturally.
+                For me, photography has never been about simply freezing what happened. It is
+                about preserving how it felt — a quiet glance, an unspoken connection, a smile
+                that lasted only a second, a touch, a pause, a moment that may never happen the
+                same way again.
               </p>
               <p>
-                Every photograph is created to be more than visually beautiful. It should preserve
-                a feeling that can be revisited for years to come.
+                I don&rsquo;t believe the best photographs are created by forcing moments. I
+                prefer to observe, wait and let people be themselves. That is where the most
+                honest frames come from — the ones that feel natural, personal and real.
+              </p>
+              <p>
+                From weddings and couple stories to portraits and intimate sessions, every story
+                brings something different. My role is to hold on to those emotions and turn them
+                into photographs that become more valuable with time.
+              </p>
+              <p>
+                Years from now, I want you to look at these photographs and not just remember the
+                moment — I want you to feel it again.
               </p>
             </div>
           </Reveal>

@@ -44,7 +44,16 @@ export default function Footer() {
           <span>&copy; {new Date().getFullYear()} Ajo Abraham. All rights reserved.</span>
         </div>
         <div className="mt-4 text-center text-[11px] tracking-[0.15em] text-ivory/30 sm:text-right">
-          Website crafted by Dravonix Media
+          Website crafted by{" "}
+          <a
+            data-cursor="link"
+            href="https://dravonixmedia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-ivory/60"
+          >
+            Dravonix Media
+          </a>
         </div>
       </div>
     </footer>

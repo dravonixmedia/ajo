@@ -13,7 +13,7 @@ export default function Introduction() {
         <Reveal delay={0.15}>
           <p className="mx-auto mt-10 max-w-xl text-sm leading-relaxed text-ink-soft md:text-base">
             Ajo Abraham is a Kerala-based professional photographer capturing weddings,
-            celebrations, fashion, portraits and life&apos;s most meaningful stories through an
+            celebrations, couples, portraits and life&apos;s most meaningful stories through an
             honest and cinematic visual approach.
           </p>
         </Reveal>

@@ -42,7 +42,7 @@ export default function About() {
                 capturing real emotions, distinctive personalities and meaningful celebrations.
               </p>
               <p>
-                His work moves between wedding storytelling, fashion, portraits, baby photography
+                His work moves between wedding storytelling, couples, portraits, intimate stories
                 and creative collaborations. Rather than forcing moments, his approach is built
                 around observation—allowing people, emotions and light to come together naturally.
               </p>

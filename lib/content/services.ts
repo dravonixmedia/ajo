@@ -13,16 +13,16 @@ export const services: Service[] = [
     description: "Relaxed, cinematic sessions that capture a couple's connection before the big day.",
   },
   {
-    title: "Fashion Photography",
-    description: "Editorial and commercial fashion collaborations with designers, stylists and brands.",
+    title: "Couple Photography",
+    description: "Natural portraits built around connection, chemistry, and moments that feel genuinely yours.",
   },
   {
     title: "Personal & Model Portfolios",
     description: "Portfolio sessions built around individual personality, for models and personal branding.",
   },
   {
-    title: "Baby & Family Photography",
-    description: "Gentle, unposed sessions that capture real warmth between families and their little ones.",
+    title: "Intimate Photography",
+    description: "Personal, expressive imagery shaped by closeness, emotion, and quiet storytelling.",
   },
   {
     title: "Editorial & Creative Collaborations",

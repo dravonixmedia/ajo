@@ -66,7 +66,7 @@ export default function Hero({ slides }: { slides: Photo[] }) {
           transition={{ delay: 0.9, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 max-w-xl text-sm text-ivory/70 md:text-base"
         >
-          Wedding, fashion and portrait photography shaped by emotion, light and honest human moments.
+          Wedding, couple and portrait photography shaped by emotion, light and honest human moments.
         </motion.p>
 
         <motion.div

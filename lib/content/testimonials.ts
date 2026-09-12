@@ -21,7 +21,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "Working with Ajo on our editorial shoot was effortless. He brought a vision and made every frame feel intentional.",
     name: "Studio Noir",
-    context: "Fashion Editorial",
+    context: "Editorial Portrait",
   },
   {
     quote:

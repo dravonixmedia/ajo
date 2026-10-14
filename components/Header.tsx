@@ -72,7 +72,7 @@ export default function Header() {
               data-cursor="link"
               onClick={(e) => handleNav(e, item.href)}
               className={clsx(
-                "text-xs uppercase tracking-[0.2em] transition-colors",
+                "text-xs font-medium uppercase tracking-[0.2em] transition-colors",
                 dark ? "text-ivory/75 hover:text-ivory" : "text-ink-soft hover:text-ink"
               )}
             >
@@ -87,7 +87,7 @@ export default function Header() {
           rel="noopener noreferrer"
           data-cursor="link"
           className={clsx(
-            "hidden border px-5 py-2 text-xs uppercase tracking-[0.2em] transition-colors md:inline-block",
+            "hidden border px-5 py-2 text-xs font-medium uppercase tracking-[0.2em] transition-colors md:inline-block",
             dark ? "border-ivory/40 text-ivory hover:border-ivory" : "border-ink/25 text-ink hover:border-ink"
           )}
         >
@@ -128,7 +128,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNav(e, item.href)}
-                className="font-serif text-3xl text-ivory"
+                className="text-3xl font-medium text-ivory"
               >
                 {item.label}
               </Link>
@@ -138,7 +138,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="mt-4 border border-ivory/40 px-6 py-3 text-xs uppercase tracking-[0.2em] text-ivory"
+              className="mt-4 border border-ivory/40 px-6 py-3 text-xs font-medium uppercase tracking-[0.2em] text-ivory"
             >
               Book a Session
             </a>

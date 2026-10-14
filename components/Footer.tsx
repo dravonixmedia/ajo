@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">
           <Logo tone="light" withSubtitle />
-          <p className="italic-statement mt-6 max-w-xl text-2xl text-ivory/85 md:text-3xl">
+          <p className="editorial-statement mt-6 max-w-xl text-2xl text-ivory/85 md:text-3xl">
             &ldquo;Stories in Light. Memories for Life.&rdquo;
           </p>
         </div>

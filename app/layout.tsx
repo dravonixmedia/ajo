@@ -3,9 +3,9 @@ import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
 import { CONTACT_EMAIL, INSTAGRAM_URL, WHATSAPP_NUMBER } from "@/lib/siteConfig";
 
-const title = "Ajo Abraham | Wedding, Fashion & Portrait Photographer in Kerala";
+const title = "Ajo Abraham | Wedding, Couple & Portrait Photographer in Kerala";
 const description =
-  "Ajo Abraham is a Kerala-based professional photographer specialising in wedding, engagement, fashion, portrait and baby & family photography — honest, cinematic storytelling for life's most meaningful moments.";
+  "Ajo Abraham is a Kerala-based professional photographer specialising in wedding, engagement, couple, portrait and intimate photography — honest, cinematic storytelling for life's most meaningful moments.";
 const siteUrl = "https://ajo.dravonix.dev";
 
 export const metadata: Metadata = {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "Kerala wedding photographer",
     "Kerala photography",
     "wedding photographer Kochi",
-    "fashion photographer Kerala",
+    "couple photographer Kerala",
     "portrait photographer Kerala",
-    "baby and family photography Kerala",
+    "intimate photography Kerala",
     "pre-wedding photography Kerala",
     "Ajo Abraham photographer",
   ],
@@ -73,9 +73,9 @@ const professionalServiceJsonLd = {
   serviceType: [
     "Wedding Photography",
     "Engagement and Pre-Wedding Photography",
-    "Fashion Photography",
+    "Couple Photography",
     "Personal and Model Portfolios",
-    "Baby and Family Photography",
+    "Intimate Photography",
     "Editorial and Creative Collaborations",
   ],
 };

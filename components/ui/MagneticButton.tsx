@@ -42,7 +42,7 @@ export default function MagneticButton({
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       className={clsx(
-        "relative isolate inline-flex items-center justify-center px-8 py-3.5 text-xs uppercase tracking-[0.25em] transition-colors duration-300",
+        "relative isolate inline-flex items-center justify-center px-8 py-3.5 text-xs font-medium uppercase tracking-[0.25em] transition-colors duration-300",
         variant === "solid" && "bg-charcoal text-ivory hover:bg-brown",
         variant === "outline" && "border border-ink/25 text-ink hover:border-ink",
         variant === "light" && "border border-ivory/40 text-ivory hover:border-ivory",

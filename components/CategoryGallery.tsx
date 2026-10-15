@@ -47,7 +47,7 @@ export default function CategoryGallery({ category }: { category: PortfolioCateg
               href="/#selected-works"
               scroll={false}
               data-cursor="link"
-              className="bg-charcoal px-6 py-3 text-xs uppercase tracking-[0.2em] text-ivory transition-colors hover:bg-brown"
+              className="bg-charcoal px-6 py-3 text-xs font-medium uppercase tracking-[0.2em] text-ivory transition-colors hover:bg-brown"
             >
               ← Back to Home
             </Link>
@@ -56,7 +56,7 @@ export default function CategoryGallery({ category }: { category: PortfolioCateg
                 key={c.slug}
                 href={`/portfolio/${c.slug}`}
                 data-cursor="link"
-                className="border border-ink/20 px-6 py-3 text-xs uppercase tracking-[0.2em] text-ink transition-colors hover:border-ink"
+                className="border border-ink/20 px-6 py-3 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:border-ink"
               >
                 {c.title}
               </Link>

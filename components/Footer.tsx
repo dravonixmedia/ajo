@@ -4,9 +4,9 @@ import { CONTACT_EMAIL, INSTAGRAM_URL, whatsappLink } from "@/lib/siteConfig";
 
 const PORTFOLIO_LINKS = [
   { label: "Weddings", href: "/portfolio/weddings" },
-  { label: "Fashion", href: "/portfolio/fashion" },
+  { label: "Couple", href: "/portfolio/couple" },
   { label: "Portraits", href: "/portfolio/portraits" },
-  { label: "Baby & Family", href: "/portfolio/baby-family" },
+  { label: "Intimate", href: "/portfolio/intimate" },
 ];
 
 const SITE_LINKS = [
@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">
           <Logo tone="light" withSubtitle />
-          <p className="italic-statement mt-6 max-w-xl text-2xl text-ivory/85 md:text-3xl">
+          <p className="editorial-statement mt-6 max-w-xl text-2xl text-ivory/85 md:text-3xl">
             &ldquo;Stories in Light. Memories for Life.&rdquo;
           </p>
         </div>
@@ -40,11 +40,20 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-ivory/10 pt-8 text-xs text-ivory/40 sm:flex-row">
-          <span>Wedding &middot; Fashion &middot; Portrait &middot; Baby Photography</span>
+          <span>Wedding &middot; Couple &middot; Portrait &middot; Intimate Photography</span>
           <span>&copy; {new Date().getFullYear()} Ajo Abraham. All rights reserved.</span>
         </div>
         <div className="mt-4 text-center text-[11px] tracking-[0.15em] text-ivory/30 sm:text-right">
-          Website crafted by Dravonix Media
+          Website crafted by{" "}
+          <a
+            data-cursor="link"
+            href="https://dravonixmedia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-ivory/60"
+          >
+            Dravonix Media
+          </a>
         </div>
       </div>
     </footer>

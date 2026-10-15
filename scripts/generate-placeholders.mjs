@@ -221,15 +221,15 @@ weddingPairs.forEach(([from, to], i) => {
   });
 });
 
-// Fashion — higher contrast, more dramatic
-const fashionPairs = [
+// Couple — higher contrast, more dramatic
+const couplePairs = [
   [charcoal, gold], [charcoal, brown], [brown, charcoal], [charcoal, paper],
   [gold, charcoal], [charcoal, ivory], [brown, gold], [charcoal, charcoal],
 ];
-fashionPairs.forEach(([from, to], i) => {
+couplePairs.forEach(([from, to], i) => {
   const portrait = i % 4 !== 3;
   const dims = portrait ? TALL : LANDSCAPE;
-  writePlate(`fashion/fashion-${String(i + 1).padStart(2, "0")}.png`, {
+  writePlate(`couple/couple-${String(i + 1).padStart(2, "0")}.png`, {
     width: dims.w, height: dims.h, from, to, angle: 45 + i * 30, glow: 0.3, vignette: 0.48, seed: nextSeed(),
   });
 });
@@ -247,15 +247,15 @@ portraitPairs.forEach(([from, to], i) => {
   });
 });
 
-// Baby & Family — soft pastel warmth
-const babyPairs = [
+// Intimate — soft pastel warmth
+const intimatePairs = [
   [paper, ivory], [ivory, gold], [paper, gold], [ivory, paper],
   [gold, ivory], [paper, brown], [ivory, ivory], [gold, paper],
 ];
-babyPairs.forEach(([from, to], i) => {
+intimatePairs.forEach(([from, to], i) => {
   const portrait = i % 3 !== 2;
   const dims = portrait ? PORTRAIT : LANDSCAPE;
-  writePlate(`baby-family/baby-family-${String(i + 1).padStart(2, "0")}.png`, {
+  writePlate(`intimate/intimate-${String(i + 1).padStart(2, "0")}.png`, {
     width: dims.w, height: dims.h, from, to, angle: 70 + i * 22, glow: 0.2, vignette: 0.3, seed: nextSeed(),
   });
 });

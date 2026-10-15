@@ -12,8 +12,8 @@
       {
         "src": "/photos/weddings/WEDDING 01.jpg",
         "alt": "Wedding 01 — Weddings photography by Ajo Abraham, Kerala",
-        "width": 3277,
-        "height": 4096
+        "width": 1600,
+        "height": 2000
       },
       {
         "src": "/photos/weddings/WEDDING 02.jpg",
@@ -28,52 +28,52 @@
         "height": 1920
       }
     ],
-    "fashion": [
+    "couple": [
       {
-        "src": "/photos/fashion/fashion-01.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-01.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1000,
         "height": 1414
       },
       {
-        "src": "/photos/fashion/fashion-02.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-02.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1000,
         "height": 1414
       },
       {
-        "src": "/photos/fashion/fashion-03.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-03.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1000,
         "height": 1414
       },
       {
-        "src": "/photos/fashion/fashion-04.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-04.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1600,
         "height": 1067
       },
       {
-        "src": "/photos/fashion/fashion-05.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-05.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1000,
         "height": 1414
       },
       {
-        "src": "/photos/fashion/fashion-06.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-06.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1000,
         "height": 1414
       },
       {
-        "src": "/photos/fashion/fashion-07.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-07.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1000,
         "height": 1414
       },
       {
-        "src": "/photos/fashion/fashion-08.png",
-        "alt": "Fashion photography by Ajo Abraham, Kerala",
+        "src": "/photos/couple/couple-08.png",
+        "alt": "Couple photography by Ajo Abraham, Kerala",
         "width": 1600,
         "height": 1067
       }
@@ -128,52 +128,52 @@
         "height": 1467
       }
     ],
-    "baby-family": [
+    "intimate": [
       {
-        "src": "/photos/baby-family/baby-family-01.png",
-        "alt": "Baby family 01 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-01.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1100,
         "height": 1467
       },
       {
-        "src": "/photos/baby-family/baby-family-02.png",
-        "alt": "Baby family 02 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-02.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1100,
         "height": 1467
       },
       {
-        "src": "/photos/baby-family/baby-family-03.png",
-        "alt": "Baby family 03 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-03.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1600,
         "height": 1067
       },
       {
-        "src": "/photos/baby-family/baby-family-04.png",
-        "alt": "Baby family 04 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-04.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1100,
         "height": 1467
       },
       {
-        "src": "/photos/baby-family/baby-family-05.png",
-        "alt": "Baby family 05 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-05.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1100,
         "height": 1467
       },
       {
-        "src": "/photos/baby-family/baby-family-06.png",
-        "alt": "Baby family 06 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-06.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1600,
         "height": 1067
       },
       {
-        "src": "/photos/baby-family/baby-family-07.png",
-        "alt": "Baby family 07 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-07.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1100,
         "height": 1467
       },
       {
-        "src": "/photos/baby-family/baby-family-08.png",
-        "alt": "Baby family 08 — Baby & Family photography by Ajo Abraham, Kerala",
+        "src": "/photos/intimate/intimate-08.png",
+        "alt": "Intimate photography by Ajo Abraham, Kerala",
         "width": 1100,
         "height": 1467
       }

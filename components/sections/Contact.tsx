@@ -9,9 +9,9 @@ import { CONTACT_EMAIL, whatsappLink } from "@/lib/siteConfig";
 const REQUIREMENTS = [
   "Wedding Photography",
   "Engagement / Pre-Wedding",
-  "Fashion Photography",
-  "Personal / Model Portfolio",
-  "Baby & Family Photography",
+  "Couple Photography",
+  "Portrait Photography",
+  "Intimate Photography",
   "Editorial / Creative Collaboration",
 ];
 
